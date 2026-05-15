@@ -1,0 +1,24 @@
+# cc-connect 配置文件（示例）
+# 实际配置路径: Windows ~\.cc-connect\config.toml (即 C:\Users\<用户名>\.cc-connect\config.toml)
+
+language = "zh"
+
+[[projects]]
+name = "openclaw"
+
+[projects.agent]
+type = "claudecode"
+
+[projects.agent.options]
+work_dir = "C:\\Users\\<用户名>\\.openclaw-new"
+mode = "auto"
+
+[[projects.platforms]]
+type = "discord"
+
+[projects.platforms.options]
+token = "<your-discord-bot-token>"
+allow_from = "*"
+allow_bots = true
+guild_id = "<your-guild-id>"
+channel_id = "<your-channel-id>"
